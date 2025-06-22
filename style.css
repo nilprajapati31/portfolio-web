@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    /* background-color: lightcoral; */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    /* background-color:burlywood;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22vh;
+}
+
+.nav-part {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+#nav img {
+    height: 10vh;
+    margin-top: 15px;
+}
+
+.nav-part h3 {
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-part h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-text {
+    /* width: fit-content; */
+    /* background-color: red; */
+    padding: 15vw 9vw;
+}
+
+.header-text h3 {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+
+.header-text h2 {
+    font-size: 4.5vw;
+    color: white;
+    font-weight: 700;
+}
+
+.header-text span {
+    color: #FF004F;
+}
+
+.header-text button {
+    padding: 17px 44px;
+    margin-top: 33px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: 2px solid #FF004F;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+}
+
+
+.header-text button:hover {
+    transition: all 1s ease;
+    background-color: #FF004F;
+}
+
+
+.header-text button a {
+    text-decoration: none;
+    color: white;
+}
+
+#about {
+    height: 100vh;
+    width: fit-content;
+    margin: 5vw 12vw;
+    display: flex;
+
+}
+
+#about img {
+    height: 80vh;
+    width: fit-content;
+    border-radius: 25px;
+    /* box-shadow: 5px 15px 5px #888888; */
+}
+
+.about-text {
+    margin-left: 5vw;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    /* color: white; */
+    font-weight: 500;
+    color: white;
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: 400;
+    /* background-color: red; */
+    color: white;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skil-box {
+    /* height: 30vh; */
+    width: 40%;
+    /* background-color: red; */
+    display: flex;
+    gap: 35px;
+    color: white
+}
+
+.sub-skil-box {
+    margin: 30px 0;
+}
+
+.sub-skil-box span {
+    color: #FF004F;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sub-skil-box p {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* services */
+
+
+#services {
+    height: 100vh;
+    width: 100%;
+}
+
+#services h1 {
+    margin: 0vw 6vw;
+    font-size: 75px;
+    color: white;
+    font-weight: 700;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 52vh;
+    width: 30%;
+    background-color: #262626;
+    margin: 4.5vw 4vw;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box-text-parent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 1vw 1vw;
+}
+
+.box-text-parent i {
+    font-size: 40px;
+}
+
+.box-text-parent h2 {
+    font-size: 30px;
+    font-weight: 600;
+    /* color: #FF004F; */
+}
+
+.box-text-parent h5 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+
+.box-text-parent a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.box:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+/* portfolio my work */
+
+#portfolio {
+    height: 180vh;
+    width: 100%;
+}
+
+#portfolio h1 {
+    margin: 0vw 6vw;
+    font-size: 75px;
+    color: white;
+    font-weight: 700;
+}
+
+.portfolio-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 3vw;
+
+}
+
+.portfolio-img img {
+    height: 70vh;
+    width: fit-content;
+    margin: 0 30px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-part-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 4vw 3vw;
+}
+
+.img-part-2 img {
+    width: fit-content;
+    height: 60vh;
+    object-fit: cover;
+}
+
+#portfolio button {
+    padding: 20px 62px;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    border: 2px solid #FF004F;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+#portfolio button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#portfolio button:hover {
+    background-color: #FF004F;
+    transition: 1s ease;
+}
+
+/* contact */
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    padding: 10vw 10vw;
+}
+
+.contact-text h1 {
+    font-size: 90px;
+    color: white;
+    font-weight: 700;
+    margin-left: 15px;
+    padding: 1vw 0;
+}
+
+.contact-text h2 {
+    color: white;
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 1vw 0;
+}
+
+.contact-text i {
+    font-size: 35px;
+    margin: 0 10px;
+    color: white;
+}
+
+.contact-text i:hover {
+    background-color: #FF004F;
+    transition: 1s ease;
+    transform: rotateX(360deg)
+}
+
+.contact-text button {
+    margin: 40px 0;
+    padding: 14px 27px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF004F;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-text button a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-text,
+.contact-right {
+    flex-basis: 100%;
+}
+
+.contact-right form input {
+    width: 85%;
+    height: 10vh;
+    text-align: start;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #262626;
+    color: white;
+    border: none;
+}
+
+.contact-right textarea {
+    width: 85%;
+    height: 20vh;
+    text-align: start;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #262626;
+    color: white;
+    border: none;
+}
+
+.contact-right button {
+    margin: 3vw 0;
+    padding: 15px 50px;
+    font-size: 22px;
+    border: none;
+    font-weight: 500;
+    background-color: #ff004f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 23px;
+    font-family: monospace;
+    color: white;
+    /* background-color: #262626; */
+}
+
+.hemburger {
+    display: none;
+}
+
+
+#nav-part.ri-menu-line {
+    display: none;
+}
+
+nav .ri-close-fill {
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .nav-part {
+        display: none;
+    }
+
+    .hemburger {
+        display: block;
+    }
+
+    #nav img {
+        height: 40px;
+        width: fit-content;
+
+    }
+
+    #nav {
+        padding: 0 2vh;
+    }
+
+    .hemburger {
+
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* 
+    .nav-part h3 a {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    } */
+
+    #nav img {
+        height: 35px;
+        width: fit-content;
+    }
+
+    #header {
+        background-image: url(final\ bg.png);
+        background-size: cover;
+    }
+
+    .header-text {
+        padding: 120vw 6vw;
+    }
+
+    .header-text h3 {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    .header-text h2 {
+        font-size: 30px;
+    }
+
+    .header-text button {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    /* about */
+
+
+    #about {
+        height: 105vh;
+        width: fit-content;
+        margin: 7vw 7vw;
+        display: block;
+    }
+
+    #about img {
+        height: 55vh;
+        width: fit-content;
+    }
+
+    .about-text {
+        margin-top: 30px;
+    }
+
+    .about-text h1 {
+        font-size: 35px;
+    }
+
+    .about-text p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .skil-box h2 {
+        font-size: 15px;
+    }
+
+    .sub-skil-box span {
+        font-size: 11px;
+    }
+
+
+    .sub-skil-box {
+        margin: 11px 0;
+    }
+
+
+    .sub-skil-box p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    /* services */
+
+
+
+    #services h1 {
+        font-size: 30px
+    }
+
+    .box-text-parent i {
+        font-size: 18px;
+    }
+
+    .box-text-parent h2 {
+        font-size: 20px;
+    }
+
+    .box-text-parent h5 {
+        font-size: 10px;
+        width: fit-content;
+
+    }
+
+    .service-box {
+        display: block;
+    }
+
+    .box {
+        height: 28vh;
+        width: 75%;
+        margin: 10vw 12.5vw;
+    }
+
+
+    #services {
+        height: 110vh;
+        width: 100%;
+    }
+
+    /* portfolio */
+
+
+    #portfolio {
+        height: 250vh;
+        width: 100%;
+    }
+
+    #portfolio h1 {
+        font-size: 30px;
+    }
+
+    .portfolio-child {
+        display: block;
+        align-content: center;
+    }
+
+    .portfolio-img img {
+        height: 50vh;
+        width: fit-content;
+        margin: 3vw 6vw;
+    }
+
+    .img-part-2 {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-part-2 img {
+        height: 32vh;
+        width: fit-content;
+        margin: 2vw 2.5vw;
+    }
+
+
+    #portfolio button {
+        padding: 22px 55px;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    /* Contact */
+
+
+    #contact {
+        height: 110vh;
+        width: 100%;
+        display: block;
+    }
+
+    
+
+    .contact-text h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 0;
+        font-weight: 400;
+    }
+
+    .contact-text h1 {
+        font-size: 35px;
+    }
+
+    .contact-text h2 i {
+        font-size: 18px;
+    }
+
+    .contact-text i {
+        font-size: 30px;
+    }
+
+    .contact-right{
+        margin: 0 30px;
+    }
+
+    .contact-right form input {
+        width: 100%;
+        height: 30px;
+    }
+
+    .contact-right form input::placeholder {
+        font-size: 16px;
+        color: white;
+    }
+
+
+    .contact-right textarea{
+        width: 100%;
+        font-size: 16px;   
+    }
+
+    .contact-right textarea::placeholder{
+        color: white;
+    }
+    
+    .contact-right button{
+        margin-top: 30px;
+        padding: 4vw 15vw;
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+    #main {
+        overflow-x: hidden;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+
+}
